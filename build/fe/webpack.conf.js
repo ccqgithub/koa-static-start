@@ -21,6 +21,7 @@ let extractCss = isProduction ?
 
 // styleLoaders: css, less, scss, sass, styl, stylus, postcss
 let styleLoaders = utils.getStyleLoaders({
+  isVue: true,
   extract: isProduction,
   extractPlugin: extractCss
 })
