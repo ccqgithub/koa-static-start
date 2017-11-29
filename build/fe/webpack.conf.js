@@ -76,7 +76,7 @@ let entryObj = {};
 
 entries.forEach((item) => {
   entryObj[item] = isProduction ?
-    item :
+    './' + item :
     hotReloadEntry.concat('./' + item);
 });
 
